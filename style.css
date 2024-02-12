@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.col.hero-section {
+    width: 40%;
+    background-color: #1565D8E5;
+    padding: 20px 40px 0 40px;
+    height: 100%;
+}
+
+.header {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.header span {
+    color: #fff;
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+.main-blockquote {
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 40px;
+}
+
+.quote-container img {
+    width: 28px;
+}
+
+.main-blockquote .main-text,
+.author-text {
+    color: #fff;
+    line-height: 38px;
+    font-size: 1.2rem;
+}
+
+.author-text i {
+    color: rgb(8, 173, 54);
+}
+
+.col:not(.hero-section) {
+    width: 60%;
+    padding: 60px;
+    text-align: right;
+}
+
+.header-link span {
+    color: #8692A6;
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header-link span.link {
+    color: #1565D8;
+
+    font-weight: 600;
+}
+
+.middle-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+.switch-btn {
+    width: 426px;
+    height: 120px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 28px;
+    margin-top: 28px;
+}
+
+.switch-btn .icon {
+    margin: 28px;
+
+}
+
+.btn-text {
+    text-align: left;
+    font-size: 1px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.sub-text {
+    color: #8692A6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 264px;
+}
+
+.switch-btn .btn-arrow i {
+    color: #1565D8;
+}
+
+.switch-btn.selected {
+    border: 1px solid #1565D8;
+    background: #F5F9FF;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 18px;
+    line-height: 28px;
+    color: #8692A6;
+
+    font-weight: 400;
+    max-width: 411px;
+    text-align: left;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-wrapper .input-label {
+    color: #696F79;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.input-wrapper input {
+    margin-bottom: 24px;
+    width: 426px;
+    height: 64px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #8692A6;
+    padding: 20px 20px 20px 30px
+}
+
+.input-wrapper input:focus {
+    border: 1px solid #1565D8;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+}
+
+.btn {
+    border: none;
+    background: none;
+    width: 426px;
+    height: 64px;
+    outline: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background: #1565D8;
+}
+
+.header-link.stepsheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link.stepsheader>div {
+    color: #8692A6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-link.stepsheader .stepsinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-link.stepsheader .stepsinfo>span {
+    color: #BDBDBD;
+    font-size: 14px;
+}
+
+
+.header-link.stepsheader .stepsinfo span:last-of-type {
+    color: #8692A6;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+input{
+    float: left;
+}
+label{
+    margin-left: 10px;
+    float: left;
+}
+.btn.btn-secoundary{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+#para{
+    color: #8692A6;
+    text-align: center;
+    margin-top: 10px;
+}

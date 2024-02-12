@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col hero-section">
+            <div class="header">
+                <img src="./images/Union.png" alt="">
+                <span>Oasis.</span>
+            </div>
+            <div class="main-blockquote">
+                <div class="quote-container">
+                    <img src="./images/block-quote-svgrepo-com.svg" alt="">
+                </div>
+                <div class="main-text">
+                    The passage experienced a surge in popularity during the 1960s when Letraset used it on their
+                    dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
+                    software.
+                </div>
+                <div class="author-text">
+                    Vincent Obi
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col right-section">
+            <div class="header-link joinus">
+                <span>
+                    Already have an account??
+                </span>
+                <span class="link">
+                    Sign In
+                </span>
+
+            </div>
+            <div class="header-link stepsheader hidden">
+                <div class="jsBack">
+                    Back
+                </div>
+                <div class="stepsinfo">
+                    <span>
+                        STEP 01/03
+                    </span>
+                    <span>
+                        Personal Info.
+                    </span>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="middle-section joinus">
+                <div class="heading">Join Us!</div>
+                <div class="sub-heading">To begin this journey, tell us what type of account you'd be opening..</div>
+
+                <div class="switch-btn jsSelectedBtn selected">
+                    <div class="icon">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
+                            <path d="M25 0L49.7275 17.9656L40.2824 47.0344H9.71758L0.272532 17.9656L25 0Z"
+                                fill="#1565D8" />
+
+
+                        </svg>
+
+                    </div>
+                    <div class="btn-text">
+                        <div class="head-text">Individual</div>
+                        <div class="sub-text">Personal account to manage all you activities.</div>
+                    </div>
+                    <div class="btn-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="switch-btn jsSelectedBtn">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
+                            <path
+                                d="M1.09543 18.2329L25 0.865247L48.9046 18.2329L39.7738 46.3344H10.2262L1.09543 18.2329Z"
+                                stroke="#1565D8" stroke-width="1.4" />
+                        </svg>
+
+                    </div>
+                    <div class="btn-text">
+                        <div class="head-text">Bussiness</div>
+                        <div class="sub-text">Own or belong to a company, this is for you.</div>
+                    </div>
+                    <div class="btn-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-section jsSignUpDiv hidden">
+                <div class="heading">Register Individual Account!</div>
+                <div class="sub-heading">For the purpose of industry regulation, your details are required.</div>
+                <form>
+                    <div class="input-wrapper margin-top-40">
+                        <label class="input-label" for="Name">Your fullname*</label>
+                        <input type="text" name="Name" id="Name" placeholder="Enter name">
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="input-label" for="Email">Email address*</label>
+                        <input type="email" name="Email" id="Email" placeholder="Enter email address">
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="input-label" for="password">Create password*</label>
+                        <input type="password" name="Name" id="password" placeholder="Enter password">
+                    </div>
+                    <input type="checkbox" id="vehicle1" name="checkbox" value="checkbox">
+                    <label for="vehicle1">I agree to terms & conditions</label><br>
+                    <button class="btn btn-primary margin-top-40" type="submit">Register Account</button>
+                    <p id="para">or</p>
+                    <button class="btn btn-secoundary margin-top-20" type="submit">Register with Google</button>
+                </form>
+            </div>
+
+            
+
+           
+            
+        </div>
+    </div>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $(document).on("click", ".jsSelectedBtn", function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+            $(".joinus").addClass("hidden");
+            $(".jsSignUpDiv").removeClass("hidden");
+            $(".stepsheader").removeClass("hidden");
+        });
+        $(document).on("click", ".jsBack", function () {           
+            $(".joinus").removeClass("hidden");
+            $(".jsSignUpDiv").addClass("hidden");
+            $(".stepsheader").addClass("hidden");
+        });
+        
+        
+        
+    });
+
+</script>
+
+</html>
